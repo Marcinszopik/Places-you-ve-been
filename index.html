@@ -1,38 +1,55 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <title>Document</title>
+    <title>Places</title>
 </head>
+
 <body>
-<div class= "container">
-    <h1>Places You've Been</h1>
-    <p>Fill the blanks </p>
+    <div class="container">
+        <h1>Places You've Been</h1>
+        <p>Fill the blanks </p>
         <form class="places">
-            Location:<br>
+            Location:
             <input id="location" type="text" name="location">
             <br>
-            Land Mark:<br>
+            Land Mark:
             <input id="landmark" type="text" name="landMark">
             <br>
-            Time of year:<br>
+            Time of year:
             <input id="time" type="text" name="time">
             <br>
-            Notes:<br>
+            Notes:
             <input id="note" type="text" name="notes">
-            <br>
-            <input type="submit" value="Submit">
-          </form> 
+            <br><br>
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
 
-          <div id= "result">
+        <h2>Places:</h2>
+        <ul id="places">
+        </ul>
 
-          </div>
+        <div id="show-place">
+            <p>Location: <span class="location"></span></p>
+            <p>Land Mark: <span class="land-mark"></span></p>
+            <p>Year: <span class="year"></span></p>
+            <p>Notes: <span class="note"></span></p>
+            <div id="buttons">
+            </div>
         </div>
+
+
+    </div>
 </body>
+
 </html>
